@@ -7,6 +7,11 @@
 [![.NET 4.x Scripting Runtime](https://img.shields.io/badge/.NET-4.x-blueviolet.svg?style=flat&cacheSeconds=2592000)](https://docs.unity3d.com/2018.3/Documentation/Manual/ScriptingRuntimeUpgrade.html)
 [![Release](https://img.shields.io/github/release/MapleStoryUnity/UnityWzLib.svg?logo=github)](https://github.com/MapleStoryUnity/UnityWzLib/releases/latest)
 
+## :floppydisk: Installation
+
+1. Download the `.unitypackage` from the release page [here](https://github.com/MapleStoryUnity/UnityWzLib/releases)
+2. Open Unity and import the `UnityWzLib_X.X.X.unitypackage` to your project.
+
 ## Dependencies
 
 - [WzLib](https://github.com/hadeutscher/MapleLib) by @hadeutscher
