@@ -1,15 +1,15 @@
-# 
-# Thank you for using 'Unity Package Exporter'. This is the generated 
+#
+# Thank you for using 'Unity Package Exporter'. This is the generated
 # unityignore file.
-# 
+#
 # Package Name: UnityWzLib
 # Version: 0.1.0
-# Creation Date: 2021-04-09 13:05:19 
-# 
+# Creation Date: 2021-04-09 13:05:19
+#
 # Package Link: https://github.com/jcs090218/UnityPackageExporter
 # Author: Shen, Jen-Chieh
-# Email: jcs090218@gmail.com
-# 
+# Email: pixisoft.tw@gmail.com
+#
 
 # Ignore this plugin itself.
 PackageExporter
