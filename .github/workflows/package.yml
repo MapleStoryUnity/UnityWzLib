@@ -7,16 +7,29 @@ on:
 env:
   # License
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-  ULF_FILE: Unity_v2021.x.ulf
   # Project
   UNITY_VERSION: 2021.1.1f1
   PROJECT_PATH: .
   # Packaging
-  PKG_VERSION: 2.2.1
+  PKG_VERSION: 0.1.3
   BUILD_METHOD: PackageExporter.BatchMode.Export
 
 jobs:
+  checklicense:
+    name: check if UNITY_LICENSE is set in github secrets
+    runs-on: ubuntu-latest
+    outputs:
+      is_unity_license_set: ${{ steps.checklicense_job.outputs.is_unity_license_set }}
+    steps:
+      - name: Check whether unity activation requests should be done
+        id: checklicense_job
+        run: |
+            echo "Skip activation job: ${{ env.UNITY_LICENSE != '' }}"
+            echo "::set-output name=is_unity_license_set::${{ env.UNITY_LICENSE != '' }}"
+
   package:
+    needs: [checklicense]
+    if: needs.checklicense.outputs.is_unity_license_set == 'true'
     name: 📦 ${{ matrix.package-name }}
     runs-on: ubuntu-latest
     strategy:
@@ -46,18 +59,6 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
           buildMethod: ${{ env.BUILD_METHOD }}
           customParameters: -nographics --name "${{ matrix.package-name }}" --version "${{ env.PKG_VERSION }}" --savePath "."
-
-      - name: Print current directory
-        run: |
-          ls -a ${{ env.PROJECT_PATH }}
-          echo ------------------------------------
-          ls -a ../${{ env.PROJECT_PATH }}
-          echo ------------------------------------
-          ls -a ./Assets
-          echo ------------------------------------
-          ls -a ./Packages
-          echo ------------------------------------
-          ls -a ./Library
 
       - name: Upload package as artifact
         uses: actions/upload-artifact@v1
