@@ -7,6 +7,7 @@
 
 # WzLib For Unity
 
+[![License](https://github.com/MapleStoryUnity/UnityWzLib/actions/workflows/license.yml/badge.svg)](https://github.com/MapleStoryUnity/UnityWzLib/actions/workflows/license.yml)
 [![Build](https://github.com/MapleStoryUnity/UnityWzLib/actions/workflows/build.yml/badge.svg)](https://github.com/MapleStoryUnity/UnityWzLib/actions/workflows/build.yml)
 [![Package](https://github.com/MapleStoryUnity/UnityWzLib/actions/workflows/package.yml/badge.svg)](https://github.com/MapleStoryUnity/UnityWzLib/actions/workflows/package.yml)
 
