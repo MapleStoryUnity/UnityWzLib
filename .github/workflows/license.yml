@@ -68,6 +68,12 @@ jobs:
         continue-on-error: true
         run: unity-license-activate "${{ secrets.UNITY_EMAIL }}" "${{ secrets.UNITY_PASSWORD }}" "${{ needs.request_alf.outputs.alf }}"
 
+      - name: Expose as artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: error.png
+          path: error.png
+
       - name: Read ulf
         id: ulfRead
         uses: juliangruber/read-file-action@v1.1.4
