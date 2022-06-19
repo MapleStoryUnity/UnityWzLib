@@ -16,7 +16,7 @@
 1. Download the `.unitypackage` from the release page [here](https://github.com/MapleStoryUnity/UnityWzLib/releases)
 2. Open Unity and import the `UnityWzLib_X.X.X.unitypackage` to your project.
 
-## Dependencies
+## 📌 Dependencies
 
 - [WzLib](https://github.com/hadeutscher/MapleLib) by @hadeutscher
 - [NAudio-Unity](https://github.com/WulfMarius/NAudio-Unity) by @WulfMarius
