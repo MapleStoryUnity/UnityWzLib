@@ -1,7 +1,7 @@
 <img align="right" src="./etc/Wizet_Logo.png" width="20%" />
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Unity Engine](https://img.shields.io/badge/unity-2022.1.9f1-black.svg?style=flat&logo=unity&cacheSeconds=2592000)](https://unity3d.com/get-unity/download/archive)
+[![Unity Engine](https://img.shields.io/badge/unity-2023.2.19f1-black.svg?style=flat&logo=unity&cacheSeconds=2592000)](https://unity3d.com/get-unity/download/archive)
 [![.NET 4.x Scripting Runtime](https://img.shields.io/badge/.NET-4.x-blueviolet.svg?style=flat&cacheSeconds=2592000)](https://docs.unity3d.com/2018.3/Documentation/Manual/ScriptingRuntimeUpgrade.html)
 [![Release](https://img.shields.io/github/release/MapleStoryUnity/UnityWzLib.svg?logo=github)](https://github.com/MapleStoryUnity/UnityWzLib/releases/latest)
 
